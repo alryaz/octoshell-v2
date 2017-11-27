@@ -5,7 +5,7 @@ Base application for modular version of Octoshell.
 
 1. install rbenv (e.g. `curl https://raw.githubusercontent.com/fesplugas/rbenv-installer/master/bin/rbenv-installer | bash`)
 1. install jdk (oracle is better).
-1. install jruby-9.0.5.0 (`rbenv install jruby-9.0.5.0`; `rbenv local jruby-9.0.5.0`)
+1. install jruby-9.1.10.0 (`rbenv install jruby-9.1.10.0`; `rbenv local jruby-9.1.10.0`)
 1. `gem install bundler`
 1. `bundle install`
 1. install redis
@@ -28,7 +28,7 @@ Base application for modular version of Octoshell.
 
 1. установить rbenv (например `curl https://raw.githubusercontent.com/fesplugas/rbenv-installer/master/bin/rbenv-installer | bash`)
 1. установить jdk (желательно oracle).
-1. установить jruby-9.0.5.0 (`rbenv install jruby-9.0.5.0`; `rbenv local jruby-9.0.5.0`)
+1. установить jruby-9.1.10.0 (`rbenv install jruby-9.1.10.0`; `rbenv local jruby-9.1.10.0`)
 1. `gem install bundler`
 1. `bundle install`
 1. установить redis
