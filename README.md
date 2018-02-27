@@ -4,7 +4,7 @@ Base application for modular version of Octoshell.
 ## Installation and starting
 
 1. `git clone`
-2. install rbenv, install jruby-1.7.18
+2. Install rbenv, install jruby-1.7.18
 3. `bundle install`.
 4. `bin/rake db:setup`
 5. optional run tests: `bin/rspec .`
@@ -27,3 +27,5 @@ Base application for modular version of Octoshell.
 8. `bundle exec sidekiq`
 9. Синхронизация доступна для проектов с Доступами из-под учётки администратора. Логи синхронизации доступны на странице кластера из-под учётки администратора.
 10. Процедура деплоя сделана через mina: `bundle exec mina deploy`.
+
+:P
