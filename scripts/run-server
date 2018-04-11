@@ -1,0 +1,4 @@
+#!/bin/bash
+source "$( dirname "$( realpath "${BASH_SOURCE}" )" )/defaults.sh"
+echo "Starting OctoShell v2 Server as '$ENV' on port $SERVER_PORT"
+(cd $SERVER_DIR && bundle exec bin/rails server -e $ENV -p $SERVER_PORT -b 0.0.0.0)
