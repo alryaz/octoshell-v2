@@ -15,7 +15,6 @@
 /log/*.log
 /engines/authentication/spec/dummy/log/*.log
 /engines/face/spec/dummy/log/*.log
-/log/*.log
 /tmp
 
 .DS_Store
@@ -25,7 +24,9 @@ config/settings/*.local.yml
 config/environments/*.local.yml
 config/dumps/
 
+# Added for Vagrant
 nohup.out
+*.log
 
 public/uploads/
 public/system/
