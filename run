@@ -1,5 +1,3 @@
-#!/bin/bash
-./scripts/run-sidekiq &
-echo "Sleeping for 10 seconds to let the sidekiq boot up"
-sleep 15
-./scripts/run-server &
+#!/bin/sh
+./run-sidekiq &
+./run-server &

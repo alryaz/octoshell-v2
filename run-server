@@ -1,0 +1,5 @@
+#!/bin/bash
+[ -z "$ENV" ] && ENV=production
+[ -z "$SERVER_PORT" ] && SERVER_PORT=3000
+echo "Starting OctoShell v2 Server as '$ENV' on port $SERVER_PORT"
+bundle exec bin/rails server -e $ENV -p $SERVER_PORT -b 0.0.0.0

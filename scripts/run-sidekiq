@@ -1,4 +1,0 @@
-#!/bin/bash
-source "$( dirname "$( realpath "${BASH_SOURCE}" )" )/defaults.sh"
-echo "Running OctoShell V2 Sidekiq in '$ENV'"
-(cd $SERVER_DIR && LAUNCHY_DEBUG=true nohup bundle exec sidekiq -L log/sidekiq.log -q auth_mailer -q core_mailer -q sessions_mailer -q sessions_validator -q sessions_starter -q stats_collector -q support_mailer -q synchronizer -e $ENV)
