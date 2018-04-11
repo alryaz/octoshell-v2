@@ -1,5 +1,6 @@
 module Core
   class Project < ActiveRecord::Base
+    include Journalable
 
     belongs_to :kind, class_name: "Core::ProjectKind", foreign_key: :kind_id
     belongs_to :organization

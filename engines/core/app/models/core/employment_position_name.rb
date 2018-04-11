@@ -3,6 +3,8 @@
 # Название позиции в организации
 module Core
   class EmploymentPositionName < ActiveRecord::Base
+    include Journalable
+    
     validates :name, presence: true, uniqueness: true
 
     def self.rffi

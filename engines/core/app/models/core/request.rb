@@ -1,5 +1,6 @@
 module Core
   class Request < ActiveRecord::Base
+    include Journalable
 
     # TODO: remove creator, delegate owner to project
     belongs_to :creator, class_name: Core.user_class, foreign_key: :creator_id

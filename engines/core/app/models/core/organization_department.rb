@@ -1,5 +1,7 @@
 module Core
   class OrganizationDepartment < ActiveRecord::Base
+    include Journalable
+    
     belongs_to :organization, inverse_of: :departments
 
     has_many :projects

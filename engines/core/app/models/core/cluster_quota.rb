@@ -1,5 +1,7 @@
 module Core
   class ClusterQuota < ActiveRecord::Base
+    include Journalable
+    
     # Since rails doesn't recognises, that qouta in plural will be qoutas,
     # we have to manually define table name here.
     self.table_name = "core_cluster_quotas"

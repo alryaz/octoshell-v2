@@ -12,14 +12,23 @@ module Journalable
   end
 
   def object_created
-    logger.debug self.changes.to_yaml
+    self.journal_changes << Core::JournalChange.create(
+      :object_attributes => self.changes,
+      :action => 0
+    )
   end
 
   def object_updated
-    logger.debug self.changes.to_yaml
+    self.journal_changes << Core::JournalChange.create(
+      :object_attributes => self.changes,
+      :action => 1
+    )
   end
 
   def object_destroyed
-    logger.debug self.changes.to_yaml
+    self.journal_changes << Core::JournalChange.create(
+      :object_attributes => self.changes,
+      :action => 2
+    )
   end
 end

@@ -1,10 +1,10 @@
 class CreateJournalTables < ActiveRecord::Migration
   def change
       create_table :core_journal_changes do |t|
-        t.references :journalable, polymorphic: true, index: true
-        t.integer  :group_id, null: false
+        t.references :journalable, polymorphic: true, index: { name: "index_journalable_object" }
+        t.integer  :group_id, null: true
         t.integer  :action, null: false
-        t.text     :attributes, null: true
+        t.text     :object_attributes, null: true
         t.text     :comment, null: true
         t.timestamps
       end

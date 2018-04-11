@@ -1,5 +1,7 @@
 module Core
   class Organization < ActiveRecord::Base
+    include Journalable
+    
     belongs_to :kind, class_name: "Core::OrganizationKind", foreign_key: :kind_id
     belongs_to :country
     belongs_to :city
